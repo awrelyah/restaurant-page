@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Prompt:wght@300;400;700&family=Rajdhani&family=Roboto+Mono:wght@100;200;400&family=Roboto:wght@100;400;900&display=swap');
+
+$apple-core: #DCC7AA;
+$citrus: #F7C331;
+$apricot: #F7882F;
+$blueberry: #6B7A8F;
+
+body{
+    background:url(/img/img5.JPG);
+    background-size:cover;
+    margin: 0;
+    font-family: 'Roboto';
+
+}
+
+.nav{
+    color: white;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+ 
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    flex: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    font-weight: bold;
+
+    button{
+        padding: 10px 40px;
+        background-color: white;
+        border:  none;
+        border-radius: 20px;
+        margin-top: 30px;
+
+    }
+}
+
+
+.title{
+    font-size: 4em;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
