@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Prompt:wght@300;400;700&family=Rajdhani&family=Roboto+Mono:wght@100;200;400&family=Roboto:wght@100;400;900&display=swap');
+
+$apple-core: #DCC7AA;
+$citrus: #F7C331;
+$apricot: #F7882F;
+$blueberry: #235185;
+$plum: #2d2034;
+
+body{
+    background:url(/src/img/blur.jpg);
+    background-size:cover;
+    margin: 0;
+    font-family: 'Roboto';
+    height: 100vh;
+    color: #dad6d0;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.about-info{
+    background-color: $plum;
+    margin-left:auto;
+    margin-right:auto;
+    width: 67vw;
+    height: 67vh;
+    padding-top: 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 2px 8px  #1d1521;
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Prompt';
+    font-weight: 100;
+    overflow-y: scroll;
+}
+.title{
+    font-size: 3rem;
+    text-shadow:  1px 1px 3px rgb(0, 0, 0);
+}
+p{
+    margin: 10px;
+}
+
+.contact{
+    color: #efe1f7;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nav{
+    color: white;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+ 
+}
+
