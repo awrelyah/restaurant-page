@@ -6,6 +6,9 @@ import { loadAbout } from "./about";
 
 loadNav();
 loadMainPage();
+addBtns();
+
+const content = document.getElementById('content');
 
 function removeAllChildNodes(parent) {
     while (parent.firstChild) {
@@ -14,15 +17,28 @@ function removeAllChildNodes(parent) {
 };
 
 function aboutPage () {
-    const content = document.getElementById('content');
     removeAllChildNodes(content);
-    console.log('wow');
     loadNav();
     loadAbout();
+    addBtns();
 };
 
-const aboutBtn = document.querySelector('.about');
-aboutBtn.addEventListener('click', aboutPage);
+function mainPage() {
+    removeAllChildNodes(content);
+    console.log('jehu');
+    loadNav();
+    loadMainPage();
+    addBtns();
+
+};
+
+function addBtns(){
+    const aboutBtn = document.querySelector('.about');
+    const iconBtn = document.querySelector('.material-symbols-outlined');
+
+    aboutBtn.addEventListener('click', aboutPage);
+    iconBtn.addEventListener('click', mainPage);
+};
 
 
 

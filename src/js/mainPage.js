@@ -1,6 +1,7 @@
 function loadMainPage (){
 
     const content = document.getElementById('content');
+    document.body.style.backgroundImage = 'url(/src/img/img5.jpg)';
 
 
     //constructor for all DOM elements

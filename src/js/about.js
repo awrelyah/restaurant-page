@@ -1,6 +1,7 @@
 function loadAbout (){
 
     const content = document.getElementById('content');
+    document.body.style.backgroundImage = 'url(/src/img/blur.jpg)';
 
 
     //constructor for all DOM elements
@@ -15,9 +16,9 @@ function loadAbout (){
 
     //appending all elements and nesting them correctly
     function appendElement(e){
-        if(e.className === 'about-info'){
+         if(e.className === 'about-info'){
             content.append(e);
-        } else if (e.className === 'title' || e.className === 'about-text' || e.className === 'for-order' || e.className === 'contact' || e.className === 'wolt'){
+        } else if (e.className === 'about-title' || e.className === 'about-text' || e.className === 'for-order' || e.className === 'contact' || e.className === 'wolt'){
             if (e.className === 'wolt'){
                 e.innerHTML = `<a href="#"> <img src="/src/img/wolt.png" alt="wolt" width="80px"> </a>`;
             };
@@ -33,7 +34,7 @@ function loadAbout (){
     }
     //DOM elements
     const aboutContainer = createElement('div', '', 'about-info');
-    const title = createElement('div', 'About us', 'title');
+    const title = createElement('div', 'About us', 'about-title');
 
     const aboutText = createElement('div', '', 'about-text');
     const p1 = createElement('p', 'Small and cozy family restaurant, founded in 2022.', 'para');

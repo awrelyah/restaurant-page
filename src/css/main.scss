@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Prompt:wght@300;400;700&family=Rajdhani&family=Roboto+Mono:wght@100;200;400&family=Roboto:wght@100;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,300;0,400;0,500;0,800;0,900;1,100;1,800&family=Prompt:wght@300;400;700&family=Roboto+Mono:wght@100;200;400&family=Roboto:wght@100;400;900&family=Spectral+SC:wght@200;300;400;700;800&family=Spectral:ital,wght@0,200;0,300;0,400;1,700&display=swap');
 
 $apple-core: #DCC7AA;
-$citrus: #F7C331;
-$apricot: #F7882F;
-$blueberry: #6B7A8F;
+$apricot: #efa66a;
+$plum: #2d2034;
 
 body{
     background:url(/src/img/img5.jpg);
     background-size:cover;
     margin: 0;
-    font-family: 'Roboto';
+    font-family: 'Spectral', sans-serif;
 
 }
+
 
 .nav{
     color: white;
@@ -21,6 +22,10 @@ body{
     justify-content: center;
     align-items: center;
     gap: 40px;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+    font-family: 'Spectral SC', sans-serif;
+
  
 }
 
@@ -36,9 +41,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     color: white;
-    text-shadow: 1px 1px 3px rgb(0, 0, 0);
     font-weight: bold;
 
     button{
@@ -47,6 +51,9 @@ body{
         border:  none;
         border-radius: 20px;
         margin-top: 30px;
+        color: $plum;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
 
     }
 }
@@ -56,4 +63,41 @@ body{
     font-size: 4em;
     letter-spacing: 0.2rem;
     text-align: center;
+    font-family: 'Spectral SC', sans-serif;
+    margin-top: 130px;
+}
+.subtitle{
+    text-shadow:  1px 1px 3px rgb(0, 0, 0);
+}
+
+.material-symbols-outlined{
+    text-shadow:  1px 1px 3px rgb(255, 255, 255);
+}
+
+.about:hover,
+.reservations:hover,
+.menu:hover,
+.resto:hover{
+    font-size: larger;
+
+}
+.about:hover,
+.reservations:hover,
+.menu:hover,
+.resto:hover{
+    text-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+
+.material-symbols-outlined:hover{
+    text-shadow:  1px 1px 3px rgb(0, 0, 0), 1px 1px 10px rgb(255, 255, 255);
+}
+
+button:hover{
+    background-color: rgba($plum, 0.9);
+    padding: 13px 43px;
+    color:white;
+}
+
+button:active{
+    background-color: $plum;
 }

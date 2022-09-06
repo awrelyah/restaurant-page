@@ -7,16 +7,14 @@ $blueberry: #235185;
 $plum: #2d2034;
 
 body{
-    background:url(/src/img/blur.jpg);
-    background-size:cover;
-    margin: 0;
-    font-family: 'Roboto';
-    height: 100vh;
-    color: #dad6d0;
-
+    color: #f5e5ce;
 }
 
 .content{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -24,7 +22,7 @@ body{
 }
 
 .about-info{
-    background-color: $plum;
+    background-color: rgba($plum, 0.8);
     margin-left:auto;
     margin-right:auto;
     width: 67vw;
@@ -43,20 +41,22 @@ body{
     font-weight: 100;
     overflow-y: scroll;
 }
-.title{
+.about-title{
     font-size: 3rem;
     text-shadow:  1px 1px 3px rgb(0, 0, 0);
+    color:white;
 }
 p{
     margin: 10px;
 }
 
 .contact{
-    color: #efe1f7;
+    color: white;
     font-style: italic;
     display: flex;
     flex-direction: column;
     gap: 4px;
+    font-size: small;
 }
 
 .nav{
