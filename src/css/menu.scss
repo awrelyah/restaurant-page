@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Prompt:wght@300;400;700&family=Rajdhani&family=Roboto+Mono:wght@100;200;400&family=Roboto:wght@100;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,300;0,400;0,500;0,800;0,900;1,100;1,800&family=Prompt:wght@300;400;700&family=Roboto+Mono:wght@100;200;400&family=Roboto:wght@100;400;900&family=Spectral+SC:wght@200;300;400;700;800&family=Spectral:ital,wght@0,200;0,300;0,400;1,700&display=swap');
+
+$apple-core: #DCC7AA;
+$apricot: #efa66a;
+$plum: #2d2034;
+
+.content{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.menu-container{
+    background-color: rgba($plum, 0.8);
+    margin-left:auto;
+    margin-right:auto;
+    width: 67vw;
+    height: 67vh;
+    padding-top: 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 2px 8px  #1d1521;
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Prompt';
+    font-weight: 100;
+    overflow-y: scroll;
+}
+
+.menu-title{
+    font-size: 3rem;
+    text-shadow:  1px 1px 3px rgb(0, 0, 0);
+    color:white;
+}
